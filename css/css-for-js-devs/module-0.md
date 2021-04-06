@@ -238,4 +238,4 @@ pass a unit here, but without the unit it becomes relative.
 
 Phew! That's a lot of material to cover. I think I'm going to get a quizlet link here soon. 
 
-
+Well would you look at that!? I actually did it. Here's a link to a quizlet set that goes through most of this material: https://quizlet.com/_9nwrfo?x=1qqt&i=27237f
