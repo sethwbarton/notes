@@ -2,7 +2,7 @@
 
 The first sequential data structure you're likely to learn about is just the regular array, or maybe a vector if you're in C++
 land. These structures by themselves have a limitation in that they require a loop in order to insert elements anywhere in the 
-sequence. A linked-list on the other hand, allows for O(1) insertion and deletion anywhere in the sequence. 
+sequence. A linked-list on the other hand, allows for O(1) insertion and deletion at the beginning and ends of the list. 
 
 A linked list, then, is useful if there are many insertions and deletions into the data structures of your program since they 
 can accomplish this motion in constant time. However, indexing into a linked list is O(n) whereas indexing into an array is O(1). 
