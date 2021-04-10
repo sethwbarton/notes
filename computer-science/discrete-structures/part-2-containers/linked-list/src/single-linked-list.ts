@@ -30,6 +30,29 @@ export class SingleLinkedList<T> {
     clear(): void {
        this.head = undefined
     }
+
+
+    /**
+     * This does what you expect. Returns the object as a list of space-separated items.
+     * */
+    toString(): string {
+        let stringifiedLinkedList = ''
+        let current = this.head
+        if ((current?.getValue() as any).toString) {
+            stringifiedLinkedList += (current?.getValue() as any).toString()
+        } else {
+            stringifiedLinkedList += current?.getValue() ? current?.getValue() as unknown as string : ''
+        }
+        while (current?.getNext()) {
+            if ((current?.getValue() as any).toString) {
+                stringifiedLinkedList += (current?.getValue() as any).toString()
+            } else {
+                stringifiedLinkedList += " " + current?.getValue() ? current?.getValue() as unknown as string : ''
+            }
+            current = current.getNext()
+        }
+        return stringifiedLinkedList
+    }
 }
 
 class Node<T> {
@@ -43,6 +66,14 @@ class Node<T> {
         } else {
             this.next = undefined;
         }
+    }
+
+    getValue() {
+        return this.value
+    }
+
+    setValue(newValue: T) {
+        this.value = newValue
     }
 
     getNext() {
