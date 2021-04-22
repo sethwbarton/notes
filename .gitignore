@@ -1,1 +1,5 @@
 .idea
+
+*-lock.json
+
+/computer-science/discrete-structures/part-2-containers/linked-list/node_modules/
